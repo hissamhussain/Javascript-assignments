@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var a = prompt("enter your number");
+            var b = prompt("enter your number");
+            var c = prompt("enter your number");
+
+            if(a<b)
+            {
+                if(b<c)
+                {
+                    alert(`${c},${b},${a}`);
+                }
+                else if(a<c)
+                {
+                    alert(`${b},${c},${a}`);
+                }
+                else
+                {
+                    alert(`${b},${a},${c}`);
+                }
+
+            }
+            else if(a<c)
+            {
+                alert(`${c},${a},${b}`);
+            }
+            else
+            {
+                if(b<c)
+                {
+                    alert(`${a},${c},${b}`);
+                }
+                else
+                {
+                    alert(`${a},${b},${c}`);
+                }
+            }
+        </script>
+    </body>
+</html>
