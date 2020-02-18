@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function sumOfSquares(i)
+            {
+                var j=0;
+                
+                    while (i >= 1) 
+                    {
+                        console.log(i);
+                        var a = i % 10;
+                        console.log(a);
+                        j += (a * a);
+                        console.log(j);
+                        i = Math.floor(i / 10);
+                        console.log(i );
+
+                    }
+                
+                
+                return j;
+            }
+                var happynumbers = []
+                for(let i=1;i<100;i++)
+                {
+                    var a = sumOfSquares(i)
+                    
+                    if(a ==1)
+                    {
+                        happynumbers.push(a)
+                    }
+                    else if(happynumbers.find(abc => abc =a))
+                    {
+                        happynumbers.push(a);
+                    }
+                }
+                
+              
+                console.log(happynumbers);
+                
+            
+        </script>
+    </body>
+</html>

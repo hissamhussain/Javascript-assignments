@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var a = +prompt("Enter marks for David")
+            var b = +prompt("Enter marks for Vinoth")
+            var c = +prompt("Enter marks for Divya")
+            var d = +prompt("Enter marks for Ishita")
+            var e = +prompt("Enter marks for Thomas")
+            var avg = (a+b+c+d+e)/5;
+            console.log(avg);
+            if(avg < 60)
+            {
+                document.body.innerHTML= 'Your grade is F'
+            }
+            else if(avg<70)
+            {
+                document.body.innerHTML = 'Your grade is D';
+            }
+            else if(avg<80)
+            {
+                document.body.innerHTML = 'Your grade is C';
+            }
+            else if(avg<90)
+            {
+                document.body.innerHTML = 'Your grade is B';
+            }
+            else if(avg<100)
+            {
+                document.body.innerHTML = 'Your grade is A';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="abc"></div>
+        <script>
+            var h = document.getElementById("abc");
+            var arr = [];
+            for(let i =0;i<=15;i++)
+            {
+                
+                if(i%2 === 0)
+                {
+                    
+                     arr.push(`<p>${i} is even</p>`)
+                }
+                else
+                {
+                     arr.push(`<p>${i} is odd</p>`)
+                }
+            }
+            h.innerHTML = arr.join("");
+            console.log(arr)
+        </script>
+    </body>
+</html>
